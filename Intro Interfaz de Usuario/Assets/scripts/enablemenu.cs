@@ -5,19 +5,16 @@ using UnityEngine;
 public class enablemenu : MonoBehaviour
 {
     [SerializeField]
-    GameObject logo;
+    GameObject mainmenu;
     // Start is called before the first frame update
-    void OnEnable()
+    void Start()
     {
-        LeanTween.moveLocalY(logo, 400f, 0.0f);
-        //para hacer aparecer el logo
-        LeanTween.moveLocalY(logo, 110f, 0.5f);
-        LeanTween.moveLocalY(logo, 110f, 5f).setEaseInBounce();
-    }
+        gameObject.SetActive(false);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+     
+        {
+
+        }
     }
 }
