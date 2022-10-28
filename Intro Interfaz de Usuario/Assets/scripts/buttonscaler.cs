@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class buttonscaler : MonoBehaviour
-{[SerializeField]
-    GameObject boton;
-    // Start is called before the first frame update
+public class ButtonScaler : MonoBehaviour
+{
     public void ScaleUp()
     {
-        LeanTween.scale(boton, Vector3.one * 1.2f, 0.5f).setEaseInBounce();
+        LeanTween.scale(gameObject, Vector3.one * 1.2f, 0.5f).setEaseInBounce();
     }
 
-    // Update is called once per frame
-   public void Scaledown()
+    public void ScaleDown()
     {
-        LeanTween.scale(boton, Vector3.one, 0.2f);
+        LeanTween.scale(gameObject, Vector3.one, 0.2f);
     }
 }

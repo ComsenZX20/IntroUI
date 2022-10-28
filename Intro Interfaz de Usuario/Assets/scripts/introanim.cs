@@ -35,9 +35,9 @@ public class introanim : MonoBehaviour
 
         gameObject.SetActive(false);
         //Activar menu principal...
-        
 
 
+        mainmenu.SetActive(true);
 
     }
 }
